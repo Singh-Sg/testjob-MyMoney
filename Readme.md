@@ -11,11 +11,11 @@ git clone
     1)Create a Python virtual environment for your Django project. This virtual environment allows you to isolate this project and install any packages you need
     without affecting the system Python installation. At the terminal, type the following command:
 
-	$ virtualenv -p python3.6 venv
+	$ python3 -m venv
 
     2)Activate the virtual environment:
 
-        $ source venv/bin/activate
+        $ env\Scripts\activate
 
     3)Install Python dependencies for this project:
 
@@ -40,7 +40,8 @@ git clone
 
 
 [2] For Frontend:-
-    1)install nodejs in ayour machine
+
+    1)install nodejs in your machine
 
     2)open terminal and go to project directory and then go to frontend 
 
