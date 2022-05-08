@@ -21,7 +21,7 @@ class Transactions(models.Model):
         User, on_delete=models.CASCADE, related_name="transaction_with"
     )
     amount = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
-    transaction_id = models.UUIDField(default=generateUUID, editable=True)
+    transaction_id = models.UUIDField(default=generateUUID, editable=False)
     transaction_type = models.CharField(max_length=20, choices=TRANSACTION_TYPE)
     transaction_date = models.DateTimeField(auto_now_add=True)
     transaction_status = models.BooleanField(default=False, verbose_name="Paid")
