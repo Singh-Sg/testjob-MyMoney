@@ -11,7 +11,7 @@ git clone
     1)Create a Python virtual environment for your Django project. This virtual environment allows you to isolate this project and install any packages you need
     without affecting the system Python installation. At the terminal, type the following command:
 
-	$ python3 -m venv
+	$ python3 -m venv env
 
     2)Activate the virtual environment:
 
