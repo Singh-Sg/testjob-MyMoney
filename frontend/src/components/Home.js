@@ -10,7 +10,7 @@ export default function Home() {
 
     function handleLogout() {
         localStorage.clear()
-        navigate('/Loginpage')
+        navigate('/login')
     }
 
     return (
@@ -19,11 +19,11 @@ export default function Home() {
             <div class="bg-dark nav-wrapper d-flex align-items-center justify-content-between" >
                 <ul class="nav nav-pills d-none d-md-flex" id="pills-tab" role="tablist">
                     <li class="nav-item " role="presentation">
-                        <Link to="/Alltransactions" class="nav-link text-white" id="top-menu" data-toggle="pill" role="tab"
+                        <Link to="/get_transactions" class="nav-link text-white" id="top-menu" data-toggle="pill" role="tab"
                             aria-controls="pills-product" aria-selected="false">All Transactions</Link>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <Link to="/Addtransaction" class="nav-link text-white" id="top-menu" data-toggle="pill" role="tab"
+                        <Link to="/add_transaction" class="nav-link text-white" id="top-menu" data-toggle="pill" role="tab"
                             aria-controls="pills-product" aria-selected="false">Add Transactions</Link>
                     </li>
                     <li onClick={handleLogout} class="nav-item" role="presentation">

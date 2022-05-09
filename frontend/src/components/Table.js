@@ -54,7 +54,7 @@ export default function Table() {
 
     if (transactionId) {
         setTimeout(() => {
-            window.open("http://127.0.0.1:3000/Alltransactions", "_self")
+            window.open("http://127.0.0.1:3000/get_transactions", "_self")
         }, 1000)
     }
 

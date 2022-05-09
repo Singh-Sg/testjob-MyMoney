@@ -29,9 +29,9 @@ useEffect(()=>{
     <Routes>
       <Route path="/" element={!accessToken ? <Loginpage /> : <Home />} />
         <Route path="/Home" element={!accessToken ? <Loginpage /> : <Home />} />
-        <Route path="/Addtransaction" element={!accessToken ? <Loginpage /> : <AddTransaction />} />
-        <Route path="/Alltransactions" element={!accessToken ? <Loginpage /> :<Home />} />
-        <Route path="/Loginpage" element={<Loginpage />} />
+        <Route path="/add_transaction" element={!accessToken ? <Loginpage /> : <AddTransaction />} />
+        <Route path="/get_transactions" element={!accessToken ? <Loginpage /> :<Home />} />
+        <Route path="/login" element={<Loginpage />} />
     </Routes>
   </BrowserRouter>
   );
