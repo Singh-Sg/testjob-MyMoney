@@ -8,19 +8,25 @@ module.exports=app=>(
             changeHandler:true,
         }
         ),
-        createProxyMiddleware("auth/transactions/",
+        createProxyMiddleware("auth/get_transactions/",
         {
             target:"http://127.0.0.1:8000/",
             changeHandler:true,
         }
         ),
-        createProxyMiddleware("auth/add-transaction/",
+        createProxyMiddleware("auth/add_transaction/",
         {
             target:"http://127.0.0.1:8000/",
             changeHandler:true,
         }
         ),
-        createProxyMiddleware("auth/all-users/",
+        createProxyMiddleware("auth/mark_paid/",
+        {
+            target:"http://127.0.0.1:8000/",
+            changeHandler:true,
+        }
+        ),
+        createProxyMiddleware("auth/all_users/",
         {
             target:"http://127.0.0.1:8000/",
             changeHandler:true,
