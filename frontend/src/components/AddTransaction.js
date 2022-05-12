@@ -104,7 +104,7 @@ export default function AddTransaction() {
                 >
                     <div style={{ textAlign: 'center' }}>
                         <p className="text-dark display-6">Add New Transaction</p>
-                        <TextField id="outlined-basic" label="Amount" variant="outlined" style={{ width: "700px" }} className="my-2" onChange={amountHandler} /><br />
+                        <TextField id="outlined-basic" type="number" label="Amount" variant="outlined" style={{ width: "700px" }} className="my-2" onChange={amountHandler} /><br />
                         <TextareaAutosize
                             style={{ width: "700px", padding: "0 10px" }}
                             onChange={reasonHandler}
