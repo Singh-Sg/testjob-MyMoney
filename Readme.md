@@ -27,7 +27,7 @@ git clone
 
     5)Create Super User
 
-        $ python manage.py createsupersuer
+        $ python manage.py createsuperuser
 
     6)Create other users by login to admin dashboard
 
